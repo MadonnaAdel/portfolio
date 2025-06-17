@@ -54,7 +54,7 @@ export default function AboutMe() {
               </div>
               <div className={style.mySkills}>
                 <h2>My Skills</h2>
-                <img src="/public/arrow.svg" alt="arrow" width={70} />
+                <img src="/arrow.svg" alt="arrow" width={70} />
               </div>
             </motion.div>
 
