@@ -18,6 +18,7 @@ const variants = {
     },
 };
 
+
 export default function Contact() {
     const ref = useRef();
     const formRef = useRef();

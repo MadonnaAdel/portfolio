@@ -1,6 +1,6 @@
-@import "../../app.scss";
+@use '../../responsive.scss' as *;
 
-.cursor{
+.cursor {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -8,7 +8,7 @@
   position: fixed;
   z-index: 999;
 
-  // @include mobile{
-  //   display: none;
-  // }
+  @include mobile {
+    display: none;
+  }
 }

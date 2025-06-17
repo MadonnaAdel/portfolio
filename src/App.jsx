@@ -6,7 +6,6 @@ import Header from "./components/header/Header";
 import Hero from "./components/landing/hero";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/protfolio/Portfolio";
-import Services from "./components/services/Services";
 const App = () => {
   return (
     <>
