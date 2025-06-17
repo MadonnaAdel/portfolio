@@ -1,6 +1,6 @@
 import "./app.scss";
 import AboutMe from "./components/aboutMe/AboutMe";
-import Contact from './components/contact/contact.jsx';
+import Contact from "./components/contact/contact";
 import Cursor from "./components/cursor/Cursor";
 import Header from "./components/header/Header";
 import Hero from "./components/landing/hero";
