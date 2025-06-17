@@ -1,0 +1,264 @@
+@use "../../responsive.scss" as *;
+
+.aboutSection {
+    background: linear-gradient(180deg, #111132, #262672);
+    color: white;
+    padding: 60px 0 0;
+    min-height: 100vh;
+
+    @include tablet {
+        padding: 80px 0;
+    }
+
+    @include mobile {
+        padding: 60px 0;
+    }
+
+    .aboutContainer {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .sectionTitle {
+            font-size: 48px;
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+            color: white;
+
+            @include tablet {
+                font-size: 38px;
+                margin-bottom: 30px;
+            }
+
+            @include mobile {
+                font-size: 30px;
+                margin-bottom: 25px;
+            }
+
+            .titleUnderline {
+                display: block;
+                width: 80px;
+                height: 3px;
+                background-color: orange;
+                margin: 10px auto 0 auto;
+                border-radius: 2px;
+            }
+        }
+
+        .contentLayout {
+            display: flex;
+            gap: 50px;
+
+            @include tablet {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            @include mobile {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .whoIAm {
+                flex: 1;
+                padding: 20px;
+
+                @include tablet {
+                    padding: 0;
+                }
+
+                @include mobile {
+                    padding: 0;
+                }
+
+                h2 {
+                    font-size: 28px;
+                    margin-bottom: 15px;
+                    color: white;
+
+                    @include tablet {
+                        font-size: 24px;
+                    }
+
+                    @include mobile {
+                        font-size: 22px;
+                        text-align: center;
+                    }
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 1.6;
+                    color: lightgray;
+
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+
+                    @include tablet {
+                        font-size: 16px;
+                        text-align: center;
+                    }
+
+                    @include mobile {
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                }
+
+                .cvButton {
+                    display: inline-block;
+                    padding: 0.75rem 1.5rem;
+                    background-color: orange;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 8px;
+                    font-weight: bold;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: #262672;
+                    }
+                }
+
+            }
+
+            .rightColumn {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+
+                @include tablet {
+                    gap: 30px;
+                }
+
+                @include mobile {
+                    gap: 25px;
+                }
+
+                .education,
+                .experience {
+                    padding: 30px;
+
+                    @include tablet {
+                        padding: 25px;
+                    }
+
+                    @include mobile {
+                        padding: 20px;
+                    }
+
+                    h2 {
+                        font-size: 28px;
+                        margin-bottom: 20px;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+
+                        i {
+                            margin-right: 10px;
+                            color: orange;
+                        }
+
+                        @include tablet {
+                            font-size: 24px;
+                            margin-bottom: 15px;
+                        }
+
+                        @include mobile {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    .item {
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                            padding-bottom: 20px;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                        }
+
+                        &:last-child {
+                            padding-bottom: 0;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+                            margin-bottom: 5px;
+                            color: orange;
+
+                            @include tablet {
+                                font-size: 18px;
+                            }
+
+                            @include mobile {
+                                font-size: 17px;
+                            }
+                        }
+
+                        p {
+                            font-size: 16px;
+                            color: lightgray;
+                            margin-bottom: 5px;
+
+                            @include tablet {
+                                font-size: 15px;
+                            }
+
+                            @include mobile {
+                                font-size: 14px;
+                            }
+                        }
+
+                        ul {
+                            list-style: none;
+                            padding: 0;
+                            margin: 10px 0 0 0;
+
+                            li {
+                                font-size: 15px;
+                                color: #B0C4DE;
+                                line-height: 1.5;
+                                margin-bottom: 8px;
+                                position: relative;
+                                padding-left: 20px;
+
+                                &::before {
+                                    content: "•";
+                                    color: orange;
+                                    font-size: 20px;
+                                    position: absolute;
+                                    left: 0;
+                                    top: -2px;
+                                }
+
+                                @include tablet {
+                                    font-size: 14px;
+                                    margin-bottom: 6px;
+                                }
+
+                                @include mobile {
+                                    font-size: 13px;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                        }
+                    }
+
+                    .mySkills {
+                        gap: 20px;
+                        display: flex;
+                        align-items: center;
+                        margin: 30px 0;
+
+                        img {
+                            rotate: 51deg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
